@@ -142,7 +142,7 @@ MEDIA QUERIES
 ==========*/
 
 @media (min-width: 37.5em) {
-  .flex {
+  .hero > div {
     margin: auto;
   }
 }
