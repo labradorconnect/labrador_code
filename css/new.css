@@ -82,6 +82,10 @@ img {
   display: block;
 }
 
+
+
+
+
 /*==========
 Hero section
 ==========*/
@@ -136,6 +140,15 @@ Hero section
   color: var(--color-light);
   padding: 0.5em 0.75em;
 }
+
+
+
+
+
+/*==========
+Problem Section
+==========*/
+
 
 /*==========
 MEDIA QUERIES
