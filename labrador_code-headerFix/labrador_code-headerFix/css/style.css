@@ -1,0 +1,1050 @@
+.page-header {
+  font-family: var(--merriweather);
+  font-weight: 700;
+  font-size: clamp(0.5rem, -0.775rem + 5.333vw, 3.5rem);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+
+.hero p {
+  color: var(--primary-font-color);
+  font-size: clamp(2rem, -0.775rem + 5.333vw, 0.75rem);
+  line-height: auto;
+  margin: 0 0 0 5rem;
+}
+
+#mobile-logo {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin: 0 auto;
+  padding: 0 0 1rem 0;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  /*   margin: 10px 0; */
+}
+
+/* #nav-image img {
+        max-width: 200px;
+        width: 200px;
+        align-self: center;
+      }
+      
+      #nav-right {
+        display: flex;
+        align-items: center;
+        align-content: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 1.5rem;
+      }
+      
+      nav a {
+             text-decoration: none; 
+             font-family: var(--merriweather);
+             color: var(--primary-font-color);
+        }
+      
+      nav a:hover {
+            color: #333;
+            border-bottom: 1px solid #333;
+        }
+      
+      nav #get-started a {
+        background: var(--primary-font-color);
+        color: #333;
+        padding: .8rem 1rem;
+        border: 0;  
+      }
+      
+      nav #get-started a:hover {
+        background: #333;
+        color: var(--primary-font-color);
+        padding: .8rem 1rem;
+        border: 0;  
+      }
+      
+      #nav-right ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+      }
+      
+      #nav-right ul li {
+        padding: 0 1.5rem;
+        color: var(--primary-font-color);
+        font-family: "Merriweather Sans", sans-serif !important;
+        font-weight: 300;
+      } */
+
+/* Nested Example 1 */
+.wrapper-13 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2vh;
+}
+
+.inner-container-13 {
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.grid-container-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "hero_content";
+  padding-top: 40vh;
+}
+
+.hero_content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.75fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo"
+    "button";
+  grid-area: hero_content;
+}
+
+/* #nav-image {
+        width: 100%;
+        margin: 1rem;
+      } */
+
+.logo {
+  grid-area: logo;
+}
+
+.button {
+  grid-area: button;
+}
+
+.logo img {
+  width: 40%;
+  padding: 0 0 0 1.5rem;
+}
+
+.logo h1 {
+  padding: 0 0 0 1.5rem;
+  color: #f7f7f7;
+  text-align: left;
+}
+
+.grid-container-problem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "problem_gartner problem_middle problem_img";
+  padding: 0 1.5em 0 1.5em;
+  justify-content: center;
+  gap: 0 1em;
+}
+
+#problem_img {
+  width: 100%;
+}
+
+.problem_middle {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "line .";
+  grid-area: problem_middle;
+  background: #f1f1f1;
+  justify-content: center;
+}
+
+.line {
+  grid-area: line;
+  background: var(--primary-color);
+  width: 2px;
+  margin: 2rem 0 2rem 3vw;
+}
+
+/* .problem_middle#blockquote {
+        margin: 50% 0;
+      }
+       */
+#blockquote p {
+  margin: 2rem 3vw 2rem 3vw;
+  font-size: clamp(1rem, -0.8rem + 1vw, 1.5rem);
+}
+
+.problem_gartner {
+  grid-area: problem_gartner;
+  padding: 0 1rem 0 1rem;
+  align-self: center;
+}
+
+.problem_gartner h3 {
+  padding: 0 0 1rem 0;
+}
+
+.problem_gartner ul {
+  line-height: 1.5rem;
+}
+
+.problem_gartner ul li {
+  padding: 0.5rem 0;
+  font-size: clamp(0.8rem, -0.8rem + 1vw, 1.5rem);
+}
+
+.problem_gartner h4 {
+  padding: 0 0 1rem 0;
+}
+
+.problem_img {
+  grid-area: problem_img;
+  align-self: center;
+  justify-content: center;
+}
+
+.grid-container-informed {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "sign-up";
+  background: var(--primary-color);
+  border: none;
+  padding: 1vh 0 1vh 0;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.sign-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "label form";
+  grid-area: sign-up;
+  font-family: var(--cera-pro);
+  font-weight: 500;
+  color: var(--primary-font-color);
+  width: 100%;
+}
+
+.sign-up h3 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  grid-area: label;
+}
+
+.sign-up .form {
+  grid-area: form;
+  margin: 0 20rem 0 0;
+  padding: 2.5rem 0;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#team {
+  background: #f1f1f1;
+}
+
+.grid-container-team i {
+  color: #333;
+}
+
+.grid-container-team i:hover,
+.container-team i:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#team-i {
+  align-self: center;
+}
+
+.social-links {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0 25%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 2rem;
+  gap: 2rem;
+  background: transparent;
+}
+
+.flex-items {
+  max-width: 180px;
+  border: 1px solid #e2e2e2;
+  margin: 0 0.5rem;
+}
+
+#team-desc p {
+  height: 40vh;
+}
+
+.flex-items h3,
+.title {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.flex-items h3 {
+  padding: 1rem 0 0.25rem 0;
+}
+
+.title p {
+  padding: 0 0 1rem 0;
+}
+
+.flex-items p {
+  padding: 0 0.5rem 1rem 0.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(5) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+/* .flex-items:nth-child(6) {
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: center;
+        order: 0;
+      }
+       */
+.social-buttons {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin: 1rem 25% 1rem 25%;
+  color: #333;
+}
+
+.social-buttons a {
+  color: #333;
+}
+
+.social-buttons a:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+  .hero {
+    height: 100vh;
+    width: auto;
+    background: url("https://www.riback.me/images/lab/images/portrait.jpg")
+      no-repeat center center/cover;
+  }
+
+  .hero_content {
+    padding: 10% 0 0 0;
+    grid-template-rows: 1fr;
+  }
+
+  .logo img {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .hero {
+    height: 100vh;
+    width: auto;
+    background: url("https://www.riback.me/images/lab/images/retina_2.jpg")
+      no-repeat bottom right/cover;
+  }
+
+  /* .logo {width: 50%; !important; margin: auto;} */
+}
+
+@media screen and (min-width: 1000px) {
+  #mobile-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .hero p {
+    margin: 0;
+  }
+
+  .grid-container-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas: "hero_content";
+    padding: 2rem 0 0 0;
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+  }
+
+  .grid-container-hero p {
+    text-align: center;
+  }
+
+  .logo img {
+    width: 90%;
+    padding: 0 0 0 1rem;
+  }
+
+  /* .btn {
+          margin: 2rem 0 0 16%;
+          
+        } */
+
+  .grid-container-problem {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas:
+      "problem_gartner"
+      "problem_middle";
+    padding: 1.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .grid-container-problem li {
+    list-style: none !important;
+  }
+
+  .problem_gartner {
+    align-self: start !important;
+    padding-bottom: 1.5rem;
+  }
+
+  .problem_middle {
+    background: rgba(241, 241, 241, 0.8);
+    position: relative;
+    align-self: start !important;
+  }
+
+  .problem_middle:before {
+    content: "";
+    background: url("https://www.riback.me/images/lab/images/at-pc.jpg") center
+      right/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*   opacity: 0.4; */
+    z-index: -2;
+  }
+
+  #blockquote {
+    margin: 0 !important;
+  }
+
+  .grid-container-stay-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "stay-connected"
+      "email-field-stay";
+    background: var(--primary-color);
+    border: none;
+    padding: 1vh 0 1vh 0;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .stay-connected {
+    grid-area: stay-connected;
+  }
+
+  .stay-connected h3 {
+    padding: 1rem 0;
+  }
+
+  .email-field-stay {
+    grid-area: email-field-stay;
+    margin: 0 5%;
+    padding: 0 !important;
+  }
+
+  #team-desc p {
+    height: auto !important;
+  }
+
+  h5 {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: clamp(2rem, -0.775rem + 7.333vw, 10rem);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+  }
+
+  .problem_gartner {
+    padding: 0 0 2rem 0 !important;
+  }
+
+  .section-spacing {
+    padding: 2rem 0;
+  }
+
+  .solution-header {
+    padding: 1.5rem 0 0 0 !important;
+  }
+
+  .solution-header p {
+    margin: 0 1em !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1001px) {
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background: url("https://www.riback.me/images/lab/images/retina_2.jpg")
+      no-repeat right bottom/cover;
+  }
+}
+input,
+button {
+  font: inherit;
+  border: 0;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+
+form {
+  display: -webkit-box;
+  display: flex;
+  grid-column: 2;
+}
+
+input {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  padding: 0.5em 0.75em;
+}
+
+button {
+  padding: 0.5em 0.75em;
+  background: #f1f1f1;
+}
+
+/* Solution */
+
+.grid-container-solution {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 0 1em;
+  grid-template-areas:
+    "solution-header"
+    "solution-body";
+  background: #f7f7f7;
+  padding: 0 1.5em 1.5 1.5em;
+}
+
+.solution-header {
+  grid-area: solution-header;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.solution-header h5 {
+  padding: 0 0 1rem 0;
+}
+
+.solution-header h4 {
+  padding: 0 0 1rem 0;
+}
+
+.solution-header h3 {
+  padding: 0 0 1rem 0;
+}
+
+.solution-header p {
+  margin: 0 5em;
+}
+
+.solution-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "solution-left solution-right solution-right";
+  grid-area: solution-body;
+  margin: 2rem 0 0 0;
+}
+
+.solution-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*   grid-template-rows: .5fr 1fr; */
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "solution-left-header"
+    /*     "solution-left-p" */;
+  /*     "solution-left-bold-p" */
+  /*     "solution-left-arrow"; */
+  grid-area: solution-left;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0 2em 20%;
+  width: 100%;
+}
+
+.solution-left-header {
+  grid-area: solution-left-header;
+}
+
+.solution h3 {
+  padding: 0 0 1rem 0;
+}
+
+.solution-left-p {
+  grid-area: solution-left-p;
+}
+
+.solution-left-bold-p {
+  grid-area: solution-left-bold-p;
+}
+
+.solution-left-arrow {
+  grid-area: solution-left-arrow;
+}
+
+.solution-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "listen observe"
+    "analyze report";
+  grid-area: solution-right;
+  width: 60%;
+  height: 100%;
+  margin: 0 0 0 30%;
+  justify-content: center;
+  align-content: center;
+}
+
+.listen {
+  grid-area: listen;
+  padding: 1.5em 1em 1.5em 1em;
+  background: #eee;
+}
+
+.listen h3,
+.listen p,
+.observe h3,
+.observe p,
+.analyze h3,
+.analyze p,
+.report h3,
+.report p {
+  padding-bottom: 1.5rem;
+}
+
+span #description {
+  font-weight: 700;
+}
+
+#description a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+
+.observe {
+  grid-area: observe;
+  padding: 1.5em 1em 1.5em 1em;
+}
+
+.analyze {
+  grid-area: analyze;
+  padding: 1.5em 1em 1.5em 1em;
+}
+
+.report {
+  grid-area: report;
+  padding: 1.5em 1em 1.5em 1em;
+  background: #eee;
+}
+
+#nav-bar header {
+  background: var(--primary-color);
+  text-align: center;
+  position: sticky;
+  z-index: 999;
+  width: 100%;
+}
+
+/* changed this from the tutorial video to
+         allow it to gain focus, making it tabbable */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, 0.75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  right: 0;
+  background: var(--primary-color);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #f7f7f7;
+  text-decoration: none;
+  /*   font-size: 1.2rem; */
+  /*   text-transform: uppercase; */
+  font-size: calc(12px + 0.8vw);
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+#nav-image {
+  max-width: 200px;
+  width: 200px;
+  align-self: center;
+  margin: 1rem 0 1rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #nav-bar header {
+    display: grid;
+    grid-template-columns: 4fr auto minmax(1fr, 100%) 1fr;
+    align-items: center;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    right: 0;
+    margin: 0 1rem 0 0;
+  }
+
+  #nav-image {
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  nav {
+    // all: unset; /* this causes issues with Edge, since it's unsupported */
+
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+    font-weight: 300;
+    color: #f7f7f7;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    bottom: -0.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .solution-header h6 {
+    font-size: 1.5rem;
+  }
+  .solution-header h5 {
+    font-size: 2.5rem;
+  }
+
+  .solution-header p {
+    font-size: clamp(1rem, -0.8rem + 1vw, 1.5rem);
+  }
+
+  .solution-header {
+    padding: 1.5rem 0 1.5rem 0;
+  }
+
+  .grid-container-solution-mobile {
+    padding: 1.5rem 0;
+  }
+
+  .grid-container-solution-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "solution_mobile";
+  }
+
+  .solution_mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "listen_solution_mobile"
+      "observe_solution_mobile"
+      "analyze_solution_mobile"
+      "report_solution_mobile";
+    grid-area: solution_mobile;
+    justify-items: center;
+  }
+
+  .listen_solution_mobile {
+    grid-area: listen_solution_mobile;
+    background: #eee;
+    height: 25vh !important;
+    width: 100%;
+  }
+
+  .solution_mobile_center {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .listen_solution_mobile h3,
+  .observe_solution_mobile h3,
+  .analyze_solution_mobile h3,
+  .report_solution_mobile h3 {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .listen_solution_mobile p,
+  .observe_solution_mobile p,
+  .analyze_solution_mobile p,
+  .report_solution_mobile p {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .listen_solution_mobile #description,
+  .observe_solution_mobile #description,
+  .analyze_solution_mobile #description,
+  .report_solution_mobile #description {
+    padding: 0 1rem;
+  }
+
+  .observe_solution_mobile {
+    grid-area: observe_solution_mobile;
+    height: 25vh !important;
+    width: 100%;
+  }
+
+  .analyze_solution_mobile {
+    grid-area: analyze_solution_mobile;
+    height: 25vh !important;
+    width: 100%;
+    background: #eee;
+  }
+
+  .report_solution_mobile {
+    grid-area: report_solution_mobile;
+    height: 25vh !important;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .logo img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+/*==========
+Set global variables
+==========*/
+
+:root {
+  --color-primary: #93cdc3;
+  --color-secondary: #71bcb1;
+  --color-light: #f7f7f7;
+  --color-dark: #333;
+  --measure: 55ch;
+  --font-main: "Merriweather Sans", sans-serif;
+}
+
+/* Declare fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: "Merriweather Sans";
+  src: url("/fonts/MerriweatherSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Merriweather Sans";
+  src: url("/fonts/MerriweatherSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Merriweather Sans";
+  src: url("/fonts/MerriweatherSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Merriweather Sans";
+  src: url("/fonts/MerriweatherSans-BoldItalic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Set proper box sizing, default width, font size */
+* {
+  box-sizing: border-box;
+  max-width: var(--measure);
+}
+
+body {
+  font-size: clamp(0.875rem, 100% + 0.25vw, 1.5rem);
+  font-family: var(--font-main);
+}
+
+/* Remove max-width from container elements */
+
+html,
+body,
+div,
+section,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+/* Basic reset */
+
+html,
+body,
+img {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*==========
+Hero section
+==========*/
+
+.hero {
+  position: relative;
+  background: url("../img/lab_web2.png") bottom right/contain no-repeat,
+    url("../img/blurred_bg.jpg") center/cover;
+  height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  background: var(--color-secondary);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+}
+.hero > * {
+  z-index: 1;
+}
+.hero > img {
+  margin: 1em 0 0 0.5rem;
+  max-width: min(20em, 80%);
+}
+
+.hero > p {
+  text-align: center;
+  color: var(--color-light);
+}
+
+.hero a {
+  text-decoration: none;
+  border: 3px solid var(--color-primary);
+  border-radius: 6px;
+  color: var(--color-light);
+  padding: 0.5em 0.75em;
+}
+
+/*==========
+MEDIA QUERIES
+==========*/
+
+@media (min-width: 37.5em) {
+  .hero {
+    background: url("../img/lab_web2.png") bottom right/auto 65% no-repeat,
+      url("../img/blurred_bg.jpg") center/cover;
+  }
+}
