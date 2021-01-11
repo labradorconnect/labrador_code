@@ -190,8 +190,6 @@ nav i {
 Problem Section
 ==========*/
 #problem {
-  flex-basis: 500em;
-  flex-grow: 1;
   outline: 1px solid green;
 }
 
@@ -201,7 +199,7 @@ Problem Section
 }
 
 #problem > *:last-child {
-  background-color: blue;
+  outline: 1px solid blue;
 }
 
 #problem h4 {
@@ -221,7 +219,7 @@ Problem Section
 }
 
 #problem ul {
-  margin: 0 1em 0 0;
+  margin: 0 auto 0 auto;
 }
 
 #problem ul li {
@@ -268,5 +266,11 @@ MEDIA QUERIES
 
   nav img {
     margin: 0;
+  }
+
+  #problem {
+    flex-wrap: wrap !important;
+    flex-basis: 50em !important;
+    flex-grow: 1;
   }
 }
