@@ -190,9 +190,11 @@ nav i {
 Problem Section
 ==========*/
 
-#problem {
+#problem,
+#solution {
   flex-basis: 43.75em;
   flex-grow: 1;
+  margin: 5em 0;
 }
 
 #problem > *:first-child {
