@@ -141,6 +141,44 @@ Hero section
 Nav Section
 ==========*/
 
+nav {
+  width: 100%;
+  background-color: var(--color-primary);
+  /* min-height: 5rem; */
+  display: flex;
+  flex-wrap: nowrap;
+  /* flex-direction: column; */
+}
+
+nav img {
+  margin: 0 auto;
+  max-width: min(15em, 60%);
+  padding: 0.5em;
+  align-content: flex-start;
+}
+
+nav i {
+  justify-content: center;
+  align-content: flex-start;
+  margin: auto 2rem auto 0;
+  color: var(--color-light);
+}
+
+.navToggle {
+  transition: transform 400ms;
+}
+.navToggle-hide {
+  transform: translateX(100%);
+}
+
+/* Make nav take up entire screen & each nav link is 100% width */
+
+/* Add hamburger icon */
+
+/* create toggle class to show/hide nav menu */
+
+/* add to media query below to change nav from column layout to row layout */
+
 /*==========
 Problem Section
 ==========*/
