@@ -350,7 +350,7 @@ nav a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: rgba(241, 241, 241, 0.8);
+  background: rgba(241, 241, 241, 0.85);
 }
 
 #problem-right {
