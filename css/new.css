@@ -189,17 +189,15 @@ nav i {
 /*==========
 Problem Section
 ==========*/
+
 #problem {
-  outline: 1px solid green;
+  flex-basis: 43.75em;
+  flex-grow: 1;
 }
 
 #problem > *:first-child {
   text-align: center;
   padding: 2em 0.5em 2em 0.5em;
-}
-
-#problem > *:last-child {
-  outline: 1px solid blue;
 }
 
 #problem h4 {
@@ -270,8 +268,19 @@ MEDIA QUERIES
   }
 
   #problem {
-    flex-wrap: wrap !important;
-    flex-basis: 50em !important;
+    display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
+    flex-direction: row;
+  }
+
+  #problem > *:first-child {
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  #problem > *:last-child {
+    justify-content: flex-end;
+    width: 50%;
   }
 }
