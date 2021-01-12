@@ -19,7 +19,7 @@
         <span style="font-weight: 800">Simplify</span> your systems.<br>
         <span style="font-weight: 800">Simplify</span> your day.
       </p>
-      <a href="#about">Get Started</a>
+      <a href="#problem">Get Started</a>
     </div>
   </section>
   <nav>
@@ -27,8 +27,9 @@
     <i class="fas fa-bars"></i>
 
   </nav>  
-
+  <div id='problem'></div>
   <section id='problem' class="alt-bg">
+    
     <div>
       <h4>THE PROBLEM</h4>
       <h3>According to Gartner</h3>
@@ -49,5 +50,44 @@
     </div>
     
       </section>
+
+      <section id="solution">
+        <div>
+          <h4>THE SOLUTION</h4>
+          <h3>Our Process</h3>
+          <p>Labrador’s mission is to empower mid-sized businesses and marketing teams to achieve their greatest potential by simplifying and centralizing Martech tools, and data</p>
+         
+        </div>
+        
+        <div>         
+            <div class="steps-bg">
+              <div class="listen"><h2>Listen</h2></div>
+              <div class="observe"><h2>Observe</h2></div>
+              <div class="analyze"><h2>Analyze</h2></div>
+              <div class="recommend"><h2>Recommend</h2></div>
+            </div>
+          </div>
+        
+        
+        </div>
+
+      </section>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+      <script>
+        hljs.initHighlightingOnLoad();
+      </script>
+         <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+          
+          <script>
+           $('a').click(function (e) {
+               $('html, body').animate({
+                   scrollTop: $($(this).attr('href')).offset().top
+               }, 1000);
+           });
+         </script>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 </body>
 </html>

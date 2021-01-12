@@ -41,6 +41,62 @@ Set global variables
   font-weight: bold;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Aktiv Thin";
+  src: url("/fonts/Aktiv-Thin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cera Pro";
+  src: url("/fonts/CeraPro-Black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cera Pro";
+  src: url("/fonts/CeraPro-BlackItalic.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cera Pro";
+  src: url("/fonts/CeraPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cera Pro";
+  src: url("/fonts/CeraPro-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cera Pro";
+  src: url("/fonts/CeraPro-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cera Pro";
+  src: url("/fonts/CeraPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
 /* Set proper box sizing, default width, font size */
 * {
   box-sizing: border-box;
@@ -69,6 +125,25 @@ h1 {
   font-size: 2em;
 }
 
+h4 {
+  font-family: "Cera Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--color-dark);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2em;
+  color: var(--color-dark);
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: var(--color-dark);
+}
+
 /* Basic reset */
 
 html,
@@ -92,7 +167,7 @@ Hero section
 
 .hero {
   position: relative;
-  background: url("/img/lab_web2.png") bottom right/auto 40% no-repeat,
+  background: url("/img/lab_web2.png") bottom right/auto 45% no-repeat,
     url("/img/blurred_bg.jpg") center/cover;
   height: 100vh;
   padding-left: 1rem;
@@ -190,32 +265,15 @@ nav i {
 Problem Section
 ==========*/
 
-#problem,
-#solution {
+#problem {
   flex-basis: 43.75em;
   flex-grow: 1;
-  margin: 5em 0;
+  margin: 0;
 }
 
 #problem > *:first-child {
   text-align: center;
   padding: 2em 0.5em 2em 0.5em;
-}
-
-#problem h4 {
-  font-weight: 500;
-  font-size: 1.5em;
-  color: var(--color-dark);
-  margin: 0 0 0.3em 0;
-  padding: 0;
-}
-
-#problem h3 {
-  font-weight: 500;
-  font-size: 2em;
-  color: var(--color-dark);
-  margin: 0 0 1em 0;
-  padding: 0;
 }
 
 #problem ul {
@@ -255,6 +313,76 @@ Problem Section
 .quote-sig {
   padding: 0 2em 2em 2em !important;
 }
+
+/*==========
+SOLUTION SECTION
+==========*/
+
+#solution {
+  flex-basis: 43.75em;
+  flex-grow: 1;
+  margin: 0;
+}
+
+#solution p {
+  z-index: 2;
+  padding: 0 0.5em 0 0.5em;
+}
+
+#solution > *:first-child {
+  display: block;
+  text-align: center;
+  padding: 2em 0.5em 0 0.5em;
+}
+
+#solution > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "steps-bg";
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.steps-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "listen observe"
+    "analyze recommend";
+  grid-area: steps-bg;
+}
+
+.listen {
+  grid-area: listen;
+  background: #eee;
+  padding: 0.5em 0.75em;
+}
+
+.observe {
+  grid-area: observe;
+  background: var(--color-light);
+  padding: 0.5em 0.75em;
+}
+
+.analyze {
+  grid-area: analyze;
+  background: var(--color-light);
+  padding: 0.5em 0.75em;
+}
+
+.recommend {
+  grid-area: recommend;
+  background: #eee;
+  padding: 0.5em 0.75em;
+}
+
 /*==========
 MEDIA QUERIES
 ==========*/
@@ -263,6 +391,11 @@ MEDIA QUERIES
   .hero > div,
   #problem h4 {
     margin: auto;
+  }
+
+  #problem h3 {
+    margin: auto;
+    padding: 0 0 0.5em 0;
   }
 
   nav img {
@@ -284,5 +417,56 @@ MEDIA QUERIES
   #problem > *:last-child {
     justify-content: flex-end;
     width: 50%;
+  }
+
+  #solution {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 0;
+    min-height: 50vh;
+  }
+
+  #solution > *:first-child {
+    justify-content: center;
+    width: 50%;
+    padding: 0 0.5em 0 0.5em;
+    margin: auto 0;
+  }
+
+  #solution > *:first-child h3 {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #solution > *:first-child h4 {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #solution > *:first-child p {
+    margin: 0.5em 1em 0 1em;
+  }
+
+  #solution > *:last-child {
+    width: 50%;
+    max-width: 50%;
+    padding: 5em 0;
+  }
+  .listen {
+    padding: 1em 3em;
+  }
+
+  .observe {
+    padding: 1em 3em;
+  }
+
+  .analyze {
+    padding: 1em 3em;
+  }
+
+  .recommend {
+    padding: 1em 3em;
   }
 }
