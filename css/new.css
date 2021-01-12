@@ -155,6 +155,8 @@ nav {
   justify-content: space-between;
   padding: 0 1em;
   /* flex-direction: column; */
+  position: sticky;
+  top: 0;
 }
 
 nav img {
