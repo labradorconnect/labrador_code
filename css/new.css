@@ -246,23 +246,20 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0 1em;
+  padding: 0.5em 1em;
   /* flex-direction: column; */
   position: sticky;
   top: 0;
 }
 
 nav img {
-  margin: 0 auto;
-  max-width: min(15em, 60%);
-  padding: 0.5em;
-  align-content: flex-start;
+  max-width: 8em;
 }
 
 nav i {
-  justify-content: center;
-  align-content: flex-start;
-  margin: auto 2rem auto 0;
+  justify-content: flex-end;
+  align-content: flex-end;
+  margin: auto 0 auto 0;
   color: var(--color-light);
 }
 
@@ -614,6 +611,7 @@ MEDIA QUERIES
 
   nav img {
     margin: 0;
+    max-width: 12em;
   }
 
   #problem {
