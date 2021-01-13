@@ -175,11 +175,10 @@ img {
   padding: 0.5em 0.75em;
   text-align: center;
   margin: 0 auto;
-  background: transparent;
 }
 
 .btn:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 .btn-dark {
@@ -499,23 +498,30 @@ CONTACT
   padding: 0 0 0.5em 0;
 }
 
-.form-group {
-  margin: 0.75rem;
+.form-group + .form-group {
+  margin-top: 0.75rem;
+}
+
+[type="submit"] {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.75rem;
 }
 
 .contact-form {
-  display: block;
+  display: flex;
 }
 
 form {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contact .contact-form input,
 #contact .contact-form textarea {
-  width: 80%;
-  max-width: 100%;
+  width: 100%;
   padding: 0.5rem;
   resize: none;
 }
