@@ -304,7 +304,7 @@ Problem Section
 
 #problem-bg {
   position: relative;
-  background: url("../img/at-pc.jpg") center/cover no-repeat;
+  background: url("../img/at-pc.jpg") center right/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
