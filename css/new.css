@@ -248,6 +248,8 @@ nav {
   justify-content: space-between;
   padding: 0 1em;
   /* flex-direction: column; */
+  position: sticky;
+  top: 0;
 }
 
 nav img {
@@ -405,7 +407,7 @@ SOLUTION SECTION
 #solution > *:first-child h3,
 #problem > *:first-child h4,
 #problem > *:first-child h3 {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 0 0.5em 0;
 }
 
@@ -423,6 +425,10 @@ BENEFITS SECTION
   margin: 0;
 }
 
+#benefits h4 {
+  padding: 1em 0 0 0;
+}
+
 #benefits p {
   font-weight: 700;
   z-index: 2;
@@ -433,6 +439,12 @@ BENEFITS SECTION
   display: block;
   text-align: center;
   padding: 0 1em;
+}
+
+#benefits > *:first-child h4,
+#benefits > *:first-child h3 {
+  margin: 0 auto;
+  padding: 1em 0 0 0;
 }
 
 #benefits > *:last-child ul {
@@ -446,11 +458,6 @@ BENEFITS SECTION
 
 #benefits > *:last-child ul li {
   padding: 0 0 1em 0;
-}
-
-#benefits > *:first-child h4 {
-  margin: 0;
-  padding: 0 0 0.5em 0;
 }
 
 #benefits > *:first-child p {
@@ -649,7 +656,8 @@ MEDIA QUERIES
 
   #solution > *:first-child h4 {
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
+    text-align: center;
   }
 
   #solution > *:first-child p {
@@ -676,6 +684,10 @@ MEDIA QUERIES
 
   .recommend {
     padding: 1em 3em;
+  }
+
+  #benefits h4 {
+    padding: 0;
   }
 
   #benefits {
