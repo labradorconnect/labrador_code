@@ -1,0 +1,33 @@
+#team {
+  outline: 1px solid red;
+}
+
+#team-group {
+  flex-basis: 43.75em;
+  flex-grow: 1;
+}
+
+#team h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  outline: 1px solid purple;
+}
+
+#team h2 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+#team h3 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#team > div {
+  outline: 1px solid rgba(51, 51, 51, 0.4);
+  min-height: 50vh;
+  margin
+}
