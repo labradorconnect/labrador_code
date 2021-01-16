@@ -1,33 +1,106 @@
 #team {
-  outline: 1px solid red;
+  flex-basis: 43.75em;
+  flex-grow: 1;
+  margin: 0 1em;
 }
 
 #team-group {
-  flex-basis: 43.75em;
-  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#team-group > div {
+  outline: 1px solid rgba(51, 51, 51, 0.4);
+  margin: 0.5em;
+  padding: 0;
 }
 
 #team h1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  outline: 1px solid purple;
+  text-align: center;
+  margin: 1em auto;
 }
 
 #team h2 {
   font-size: 1em;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0.25em 0;
 }
 
 #team h3 {
   font-size: 1.5em;
   margin: 0;
-  padding: 0;
+  justify-self: flex-start;
+  align-self: flex-start;
+  text-align: center;
+  padding: 0 0 0.1em 0;
 }
 
-#team > div {
-  outline: 1px solid rgba(51, 51, 51, 0.4);
-  min-height: 50vh;
-  margin
+#team p {
+  text-align: center;
+  padding: 0 1em;
+}
+
+#team img {
+  padding: 1em 0 0 0;
+}
+
+#brian,
+#jason,
+#corwin,
+#zak {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.profile-text {
+  text-align: center;
+  justify-items: center;
+  align-self: center;
+  margin: 0 auto;
+  padding: 1em;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 6.5em;
+}
+
+.profile-text a i {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.profile-text a i:hover,
+.profile-text a i:active,
+.profile-text a i:visited {
+  color: var(--color-primary);
+}
+
+/*==========
+MEDIA QUERIES
+==========*/
+
+@media (min-width: 37.5em) {
+  #team {
+    /* row-gap: 2em; */
+    width: 100%;
+    outline: 1px solid purple;
+  }
+  #team-group {
+    display: flex;
+    outline: 1px solid orange;
+  }
+
+  #team-group > div {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    align-items: space-around;
+  }
 }
