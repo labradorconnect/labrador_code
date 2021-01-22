@@ -253,6 +253,7 @@ nav {
   /* flex-direction: column; */
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 nav img {
@@ -377,6 +378,7 @@ SOLUTION SECTION
     "listen observe"
     "analyze recommend";
   grid-area: steps-bg;
+  padding-bottom: 2em !important;
 }
 
 .listen {
@@ -413,6 +415,11 @@ SOLUTION SECTION
 
 #solution > *:first-child p {
   margin: 0 1em 2em 1em;
+}
+
+#solution > *:first-child h4,
+#contact > *:first-child h4 {
+  padding-top: 2em !important;
 }
 
 /*==========
@@ -465,6 +472,96 @@ BENEFITS SECTION
 }
 
 /*==========
+TEAM
+==========*/
+
+#team {
+  flex-basis: 43.75em;
+  flex-grow: 1;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+#team-group {
+  margin: 0;
+  padding: 0;
+}
+
+#team-group > div {
+  outline: 1px solid rgba(51, 51, 51, 0.4);
+  margin: 1em;
+  padding: 0;
+}
+
+#team h1 {
+  text-align: center;
+  margin: 1em auto;
+}
+
+#team h2 {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+#team h3 {
+  font-size: 1em;
+  text-align: center;
+  margin: 0.25em 0;
+}
+
+#team p {
+  text-align: center;
+  padding: 0 0.75em 1.5em 0.75em;
+  margin: 0.25em 1em;
+  font-size: clamp(0.875rem, 100% + 0.15vw, 1rem);
+}
+
+#team img {
+  padding: 1.5em 0 0.5em 0;
+  margin: 0 auto;
+}
+
+.team-description {
+  padding: 1em 0 1em 0;
+}
+
+/* #brian,
+#jason,
+#corwin,
+#zak {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 1px solid purple;
+} */
+
+.profile-text {
+  text-align: center;
+  padding: 0.5em 0 0 0;
+  margin: 0 auto;
+}
+
+/* .icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 6.5em;
+} */
+
+.profile-text a i {
+  text-decoration: none;
+  color: var(--color-dark);
+  margin: 0.25em 0;
+}
+
+.profile-text a i:hover,
+.profile-text a i:active,
+.profile-text a i:visited {
+  color: var(--color-primary);
+}
+
+/*==========
 CONTACT
 ==========*/
 
@@ -477,42 +574,35 @@ CONTACT
 #contact p {
   font-weight: 700;
   z-index: 2;
-  padding: 0 0.5em 1em 0.5em;
+  padding: 0 1em 1em 1em;
 }
 
 #contact > *:first-child {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#contact > *:last-child ul {
+/* #contact > *:last-child ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
   font-weight: 300;
-}
+} */
 
-#contact > *:last-child ul li {
+/* #contact > *:last-child ul li {
   padding: 0 0 1em 0;
-}
+} */
 
 #contact > *:first-child h4 {
   margin: 0;
   padding: 0 0 0.5em 0;
 }
 
-.form-group + .form-group {
-  margin-top: 0.75rem;
-}
-
-[type="submit"] {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0.75rem;
-}
-
-.contact-form {
+/* .contact-form {
   display: flex;
 }
 
@@ -546,10 +636,14 @@ form {
 #contact .contact-form input:active,
 #contact .contact-form textarea:active {
   background: rgba(51, 51, 51, 0.4);
+} */
+
+.form-label #contact > *:first-child p {
+  margin: 0.5em 0.5em 0 0.5em;
 }
 
-#contact > *:first-child p {
-  margin: 0.5em 0.5em 0 0.5em;
+#desktop-contact {
+  display: none;
 }
 
 /*==========
@@ -651,10 +745,13 @@ MEDIA QUERIES
   }
 
   #solution > *:first-child {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    padding: 0 0.5em 0 0.5em;
-    margin: auto 0;
+    padding: 0 2em 0 0.5em;
+    justify-content: center;
+    margin-top: -2em;
+    text-align: center;
   }
 
   #solution > *:first-child h3 {
@@ -669,7 +766,8 @@ MEDIA QUERIES
   }
 
   #solution > *:first-child p {
-    margin: 0.5em 1em 0 1em;
+    margin: 0 auto;
+    padding: 0.75em 1.5em 0 1.5em;
   }
 
   #solution > *:last-child {
@@ -722,6 +820,10 @@ MEDIA QUERIES
     align-content: center;
   }
 
+  .steps-bg {
+    margin-right: 2em;
+  }
+
   #contact {
     display: flex;
     flex-wrap: wrap;
@@ -733,22 +835,32 @@ MEDIA QUERIES
     margin: auto;
   }
 
-  #contact > *:first-child {
+  #desktop-contact {
+    display: flex;
+  }
+
+  /* #contact > *:first-child {
     width: 50%;
     padding: 0 1em;
     margin: auto 0;
-  }
+  } */
 
   #contact-right {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     width: 50%;
     margin: 0 auto;
-    padding: 2em;
   }
 
   #contact-form {
     display: block;
     margin: 0 auto;
     padding: 0;
+  }
+
+  #team p {
+    min-height: 6em;
   }
 
   footer {
@@ -759,5 +871,21 @@ MEDIA QUERIES
     background: var(--color-primary);
     padding: 1em 0;
     text-align: left;
+  }
+  #team {
+    /* row-gap: 2em; */
+    width: 100%;
+  }
+  #team-group {
+    display: flex;
+  }
+
+  button {
+    margin: 0 !important;
+  }
+
+  .submit {
+    margin: 0 auto;
+    padding: 0 15em 0 0 !important;
   }
 }

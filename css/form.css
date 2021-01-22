@@ -1,0 +1,102 @@
+.form {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.form div > * {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form ul {
+  list-style: none;
+  font-weight: 300;
+}
+
+.form ul li {
+  text-align: left;
+}
+
+.form-required {
+  color: #cd0000;
+}
+
+.form-input input,
+.form-input textarea {
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  border-radius: 3px;
+  padding: 0.5em 0 0.5em 0.5em;
+  color: var(--color-dark);
+  font-family: var(--font-main);
+}
+
+.form-input input,
+.form-input textarea {
+  width: 85%;
+  margin: 0.75em auto 0 auto;
+}
+
+.form-line {
+  margin: 1.5em auto;
+}
+
+#sublabel_11_masked {
+  padding: 0 0 0 2.15em;
+  margin: 1.5em 0;
+  font-size: 0.75em;
+}
+
+.form-input #input_5 {
+  padding: 0.5em !important;
+  height: 10em;
+}
+
+.form-textarea {
+  max-width: 100%;
+  resize: none;
+}
+
+.form-label {
+  margin: 0 0 2em 0 !important;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background: var(--color-primary);
+  border: none;
+  padding: 0.5em 5em !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  color: #f7f7f7;
+}
+
+.submit {
+  margin: 0 auto;
+  padding: 0 5em 0 2em;
+}
+
+button:hover {
+  background: var(--color-secondary);
+}
+
+div#jfQuestion-proxy.forFullScreen[data-type="control_inline"].form-line-error
+  input.form-validation-error[class*="validate"],
+li[data-type="control_inline"].form-line-error
+  input.form-validation-error[class*="validate"] {
+  border-width: 0 0 1px !important;
+}
+div#jfQuestion-proxy.forFullScreen[data-type="control_inline"].form-line-error
+  input.form-validation-error[class*="validate"]:focus,
+div#jfQuestion-proxy.forFullScreen[data-type="control_inline"].form-line-error
+  input.form-validation-error[class*="validate"]:hover,
+li[data-type="control_inline"].form-line-error
+  input.form-validation-error[class*="validate"]:focus,
+li[data-type="control_inline"].form-line-error
+  input.form-validation-error[class*="validate"]:hover {
+  box-shadow: 0 2px 0 0 #ffa5a5 !important;
+}
