@@ -33,3 +33,22 @@ function formatTel() {
 
 
 phoneInput.addEventListener('input', formatTel);
+
+
+//==========
+// Contact handler
+//==========
+
+const form = document.querySelector('#contact form');
+const formSubmitButton = form.querySelector("[type='submit']");
+const successString = '<h4>Thank You For Your Interest In Labrador.</h4><p>We look forward to responding, shortly.</p>'
+function contactSubmitHandler(e) {
+  e.preventDefault();
+  formSubmitButton.setAttribute('disabled', true);
+  setTimeout(() => formSubmitButton.removeAttribute('disabled'),15000);
+  setTimeout(() => form.innerHTML = successString, 17000);
+  
+}
+
+form.addEventListener('submit', contactSubmitHandler);
+

@@ -264,7 +264,7 @@ nav ul {
   padding: 0;
   margin: 0;
   background: var(--color-light);
-  width: fit-content;
+  /* width: fit-content; */
   height: 100vh;
   transition: transform 400ms;
   transform: scale(0,1);
